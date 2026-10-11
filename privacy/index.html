@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ertlanner Gizlilik Politikası</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #f6f6f3; --card: #fcfcfb; --text: #0b0b0b; --muted: #3f3e3b; --accent: #217a4b; --border: rgba(11,11,11,.1); }
+    @media (prefers-color-scheme: dark) { :root { --bg: #0f0f0e; --card: #1a1a19; --text: #f4f4f2; --muted: #c3c2b7; --accent: #3fae72; --border: rgba(255,255,255,.1); } }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width: 780px; margin: 0 auto; padding: 40px 20px 64px; }
+    h1 { font-size: 26px; margin: 0 0 4px; }
+    h2 { font-size: 18px; margin: 24px 0 6px; }
+    section { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 8px 22px 18px; margin: 18px 0; }
+    p, li { color: var(--muted); }
+    a { color: var(--accent); }
+    .meta { color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <p><a href="../">Ertlanner</a></p>
+    <h1>Gizlilik Politikası / Privacy Policy</h1>
+    <p class="meta">Son güncelleme / Last updated: 11 Ekim 2026 / October 11, 2026</p>
+
+    <section lang="tr">
+      <h2>Özet</h2>
+      <p>Ertlanner bir masaüstü uygulamasıdır ve geliştiricinin işlettiği bir sunucu yoktur. Verilerin senin bilgisayarında ve, eşitlemeyi açarsan, yalnızca kendi Google hesabının Google Drive alanında durur. Geliştirici bu verilere erişemez, onları toplamaz, satmaz veya paylaşmaz.</p>
+
+      <h2>Hangi Google verilerine erişilir?</h2>
+      <ul>
+        <li><strong>Temel hesap bilgisi</strong> (openid, e-posta, ad): Hangi hesapla giriş yaptığını göstermek ve eşitlenen verinin doğru hesaba ait olduğunu doğrulamak için.</li>
+        <li><strong>Google Drive uygulama klasörü</strong> (drive.appdata): Ertlanner verilerini kendi cihazların arasında eşitlemek için yalnızca Ertlanner'ın oluşturduğu gizli uygulama klasörü kullanılır. Drive'ındaki diğer dosyalarını göremez ve değiştiremez.</li>
+        <li><strong>Google Calendar</strong> (salt okunur takvim listesi ve etkinlikler): İstersen toplantılarını ders programının yanında göstermek için. Takvimine hiçbir şey eklenmez veya değiştirilmez.</li>
+      </ul>
+
+      <h2>Veriler nerede saklanır?</h2>
+      <p>Çalışma kayıtları, ders programı, belgeler ve başvuru bilgileri bilgisayarındaki uygulama veri klasöründe tutulur. Eşitleme açıksa bu verilerin bir kopyası kendi Google Drive'ındaki gizli Ertlanner uygulama klasörüne yazılır. Google giriş bilgileri, işletim sisteminin güvenli depolamasıyla (Windows'ta kullanıcı hesabı şifrelemesi, macOS'ta Anahtar Zinciri) şifrelenerek yalnızca bilgisayarında saklanır.</p>
+
+      <h2>Paylaşım</h2>
+      <p>Veriler üçüncü taraflarla paylaşılmaz, satılmaz, reklam veya analiz için kullanılmaz. Uygulama yalnızca Google'ın API'leriyle doğrudan iletişim kurar.</p>
+
+      <h2>Erişimi kaldırma ve silme</h2>
+      <p>Ertlanner'ın Google erişimini istediğin zaman <a href="https://myaccount.google.com/permissions">Google Hesabı İzinleri</a> sayfasından kaldırabilirsin. Drive'daki Ertlanner verilerini Google Drive > Ayarlar > Uygulamaları Yönet > Ertlanner > Gizli uygulama verilerini sil yoluyla silebilirsin. Bilgisayardaki veriler, uygulamanın veri klasörü silinerek kaldırılır.</p>
+
+      <h2>Google API Hizmetleri Kullanıcı Verileri Politikası</h2>
+      <p>Ertlanner'ın Google API'lerinden aldığı bilgileri kullanması ve aktarması, Sınırlı Kullanım (Limited Use) gereksinimleri dahil olmak üzere <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Hizmetleri Kullanıcı Verileri Politikası</a>'na uyar.</p>
+    </section>
+
+    <section lang="en">
+      <h2>Summary</h2>
+      <p>Ertlanner is a desktop application and its developer operates no servers. Your data stays on your computer and, if you turn on sync, only in your own Google account's Google Drive storage. The developer cannot access this data and does not collect, sell or share it.</p>
+
+      <h2>Which Google data is accessed?</h2>
+      <ul>
+        <li><strong>Basic account info</strong> (openid, email, profile): to show which account is signed in and to make sure synced data belongs to that account.</li>
+        <li><strong>Google Drive app data folder</strong> (drive.appdata): to sync Ertlanner data between your own devices, using only the hidden app folder that Ertlanner creates. Ertlanner cannot see or modify any other files in your Drive.</li>
+        <li><strong>Google Calendar</strong> (read-only calendar list and events): optionally, to show your meetings next to your class schedule. Nothing is added to or changed in your calendar.</li>
+      </ul>
+
+      <h2>Where is data stored?</h2>
+      <p>Study records, schedule, documents and application information are stored in the app's data folder on your computer. If sync is on, a copy is written to the hidden Ertlanner app folder in your own Google Drive. Google sign-in credentials are encrypted with the operating system's secure storage (Windows user-account encryption, macOS Keychain) and stored only on your computer.</p>
+
+      <h2>Sharing</h2>
+      <p>Data is not shared with third parties, not sold, and not used for advertising or analytics. The app communicates directly with Google's APIs only.</p>
+
+      <h2>Revoking access and deleting data</h2>
+      <p>You can revoke Ertlanner's access at any time on your <a href="https://myaccount.google.com/permissions">Google Account permissions</a> page. You can delete Ertlanner's data in Drive via Google Drive > Settings > Manage apps > Ertlanner > Delete hidden app data. Data on your computer is removed by deleting the app's data folder.</p>
+
+      <h2>Google API Services User Data Policy</h2>
+      <p>Ertlanner's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    </section>
+
+    <p class="meta">İletişim / Contact: <a href="https://github.com/ErtugrulS32175/ertlanner-site/issues">GitHub</a></p>
+  </main>
+</body>
+</html>
