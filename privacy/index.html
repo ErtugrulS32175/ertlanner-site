@@ -22,54 +22,92 @@
   <main>
     <p><a href="../">Ertlanner</a></p>
     <h1>Gizlilik Politikası / Privacy Policy</h1>
-    <p class="meta">Son güncelleme / Last updated: 11 Ekim 2026 / October 11, 2026</p>
+    <p class="meta">Son güncelleme / Last updated: 17 Ekim 2026 / October 17, 2026</p>
 
     <section lang="tr">
       <h2>Özet</h2>
-      <p>Ertlanner bir masaüstü uygulamasıdır ve geliştiricinin işlettiği bir sunucu yoktur. Verilerin senin bilgisayarında ve, eşitlemeyi açarsan, yalnızca kendi Google hesabının Google Drive alanında durur. Geliştirici bu verilere erişemez, onları toplamaz, satmaz veya paylaşmaz.</p>
+      <p>Ertlanner bir masaüstü uygulamasıdır. Verilerin senin bilgisayarında ve, eşitlemeyi açarsan, yalnızca kendi Google hesabının Google Drive alanında durur. Geliştirici bu verilere erişemez, onları toplamaz, satmaz veya paylaşmaz.</p>
+      <p>İsteğe bağlı Ekip özelliğini açarsan, paylaşmayı seçtiğin bilgiler Google Firebase'de saklanır ve yalnızca ekibindeki kişiler tarafından görülebilir. Diğer tüm veriler bilgisayarında ve kendi Google Drive'ında kalır.</p>
 
       <h2>Hangi Google verilerine erişilir?</h2>
       <ul>
-        <li><strong>Temel hesap bilgisi</strong> (openid, e-posta, ad): Hangi hesapla giriş yaptığını göstermek ve eşitlenen verinin doğru hesaba ait olduğunu doğrulamak için.</li>
+        <li><strong>Temel hesap bilgisi</strong> (openid, email): Hangi hesapla giriş yaptığını göstermek ve eşitlenen verinin doğru hesaba ait olduğunu doğrulamak için.</li>
         <li><strong>Google Drive uygulama klasörü</strong> (drive.appdata): Ertlanner verilerini kendi cihazların arasında eşitlemek için yalnızca Ertlanner'ın oluşturduğu gizli uygulama klasörü kullanılır. Drive'ındaki diğer dosyalarını göremez ve değiştiremez.</li>
-        <li><strong>Google Calendar</strong> (salt okunur takvim listesi ve etkinlikler): İstersen toplantılarını ders programının yanında göstermek için. Takvimine hiçbir şey eklenmez veya değiştirilmez.</li>
+        <li><strong>Google Calendar</strong> (calendar.calendarlist.readonly, calendar.events.readonly): İstersen toplantılarını ders programının yanında göstermek için. Takvimine hiçbir şey eklenmez veya değiştirilmez.</li>
       </ul>
 
       <h2>Veriler nerede saklanır?</h2>
       <p>Çalışma kayıtları, ders programı, belgeler ve başvuru bilgileri bilgisayarındaki uygulama veri klasöründe tutulur. Eşitleme açıksa bu verilerin bir kopyası kendi Google Drive'ındaki gizli Ertlanner uygulama klasörüne yazılır. Google giriş bilgileri, işletim sisteminin güvenli depolamasıyla (Windows'ta kullanıcı hesabı şifrelemesi, macOS'ta Anahtar Zinciri) şifrelenerek yalnızca bilgisayarında saklanır.</p>
 
-      <h2>Paylaşım</h2>
-      <p>Veriler üçüncü taraflarla paylaşılmaz, satılmaz, reklam veya analiz için kullanılmaz. Uygulama yalnızca Google'ın API'leriyle doğrudan iletişim kurar.</p>
+      <h2>Ekip (İsteğe Bağlı)</h2>
+      <p>Ekip özelliği yalnızca sen açarsan çalışır. Ekip için şunlar Google Firebase'de (Cloud Firestore, Avrupa'da; Firebase Authentication, ABD'de) saklanır: Google hesap kimliğin ve e-posta adresin, seçtiğin görünen ad, ekip üyeliğin ve davetler, paylaşmayı açtığın ders programı (son 4 haftanın, bu haftanın ve gelecek haftanın dersleri: ders adı, gün, saat, süre, renk; ekipten gizlediğin dersler hariç), yazdığın mesajlar ve geri bildirimler.</p>
+      <p>Konumlar, Google Takvim etkinlikleri, projeler, staj başvuruları, belgeler ve seans notları paylaşılmaz. Bu bilgileri yalnızca ekibinin üyeleri görebilir; davet edilen kişiler ekip adını ve üyelerin e-posta adreslerini de görür. Firebase projesinin sahibi olarak geliştirici bu verilere teknik olarak erişebilir, ama onları yalnızca hizmeti çalıştırmak ve sorun gidermek için kullanır. Google, Firebase'i veri işleyen olarak Firebase Veri İşleme Koşulları'na göre çalıştırır.</p>
 
-      <h2>Erişimi kaldırma ve silme</h2>
-      <p>Ertlanner'ın Google erişimini istediğin zaman <a href="https://myaccount.google.com/permissions">Google Hesabı İzinleri</a> sayfasından kaldırabilirsin. Drive'daki Ertlanner verilerini Google Drive > Ayarlar > Uygulamaları Yönet > Ertlanner > Gizli uygulama verilerini sil yoluyla silebilirsin. Bilgisayardaki veriler, uygulamanın veri klasörü silinerek kaldırılır.</p>
+      <h2>Ekip Verilerinin Saklanması ve Silinmesi</h2>
+      <ul>
+        <li>Paylaşılan bir hafta, bitiminden yaklaşık 4 hafta sonra ekipten gizlenir ve senin ya da ekip sahibinin Ertlanner'ı açıldığında silinir.</li>
+        <li>Mesajlar 180 gün sonra, yazanın ya da ekip sahibinin Ertlanner'ı açıldığında silinir.</li>
+        <li>Davetler, ekip sahibi geri alana ya da davet edilen kişi reddedene kadar kalır.</li>
+        <li>Paylaşımı kapattığında ilgili haftalar hemen silinir.</li>
+        <li>Ekipten ayrıldığında paylaştığın program ve senin hakkında yazılan geri bildirimler silinir; istersen yazdığın mesajlar da silinir.</li>
+        <li>Ekip sahibi seni ekipten çıkarırsa paylaştığın program, yazdığın mesajlar ve senin hakkında yazılan geri bildirimler silinir.</li>
+        <li>Ekip sayfasındaki "Ekip Verilerimi Sil" içinde bulunduğun ekipteki verilerini ve ekip hesabını siler. Daha önce ayrıldığın bir ekipte bıraktığın mesajlar bu işlemin kapsamına girmez; onların silinmesi için aşağıdaki iletişim adresine yazabilirsin.</li>
+      </ul>
+
+      <h2>Güncelleme Denetimi</h2>
+      <p>Ertlanner yeni sürüm olup olmadığını öğrenmek için github.com'daki herkese açık ertlanner-releases sayfasına bağlanır. Bu istekle kişisel veri gönderilmez; GitHub bağlantının IP adresini görür.</p>
+
+      <h2>Paylaşım</h2>
+      <p>Ertlanner yalnızca Google hizmetleriyle (Google hesabı, Drive, Takvim, Firebase) ve güncelleme denetimi için GitHub'la iletişim kurar. Veriler satılmaz, reklam veya analiz için kullanılmaz. Ekip özelliğinde yalnızca senin seçtiğin bilgiler ekip üyelerine gösterilir.</p>
+
+      <h2>Erişimi Kaldırma ve Silme</h2>
+      <p>Ertlanner'ın Google erişimini istediğin zaman <a href="https://myaccount.google.com/permissions">Google Hesabı İzinleri</a> sayfasından kaldırabilirsin. Drive'daki Ertlanner verilerini Google Drive > Ayarlar > Uygulamaları Yönet > Ertlanner > Gizli uygulama verilerini sil yoluyla silebilirsin. Ekip verilerin için önce Ekip sayfasındaki "Ekip Verilerimi Sil"i kullan; Google erişimini kaldırmak Firebase'deki ekip verilerini kendiliğinden silmez. Bilgisayardaki veriler, uygulamanın veri klasörü silinerek kaldırılır.</p>
 
       <h2>Google API Hizmetleri Kullanıcı Verileri Politikası</h2>
-      <p>Ertlanner'ın Google API'lerinden aldığı bilgileri kullanması ve aktarması, Sınırlı Kullanım (Limited Use) gereksinimleri dahil olmak üzere <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Hizmetleri Kullanıcı Verileri Politikası</a>'na uyar.</p>
+      <p>Ertlanner'ın Google API'lerinden aldığı bilgileri kullanması ve aktarması, Sınırlı Kullanım (Limited Use) gereksinimleri dahil olmak üzere <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Hizmetleri Kullanıcı Verileri Politikası</a>'na uyar. Google Takvim verileri ekip özelliğinde paylaşılmaz.</p>
     </section>
 
     <section lang="en">
       <h2>Summary</h2>
-      <p>Ertlanner is a desktop application and its developer operates no servers. Your data stays on your computer and, if you turn on sync, only in your own Google account's Google Drive storage. The developer cannot access this data and does not collect, sell or share it.</p>
+      <p>Ertlanner is a desktop application. Your data stays on your computer and, if you turn on sync, only in your own Google account's Google Drive storage. The developer cannot access this data and does not collect, sell or share it.</p>
+      <p>If you turn on the optional Team feature, the information you choose to share is stored in Google Firebase and is visible only to members of your team. All other data stays on your computer and in your own Google Drive.</p>
 
       <h2>Which Google data is accessed?</h2>
       <ul>
-        <li><strong>Basic account info</strong> (openid, email, profile): to show which account is signed in and to make sure synced data belongs to that account.</li>
+        <li><strong>Basic account info</strong> (openid, email): to show which account is signed in and to make sure synced data belongs to that account.</li>
         <li><strong>Google Drive app data folder</strong> (drive.appdata): to sync Ertlanner data between your own devices, using only the hidden app folder that Ertlanner creates. Ertlanner cannot see or modify any other files in your Drive.</li>
-        <li><strong>Google Calendar</strong> (read-only calendar list and events): optionally, to show your meetings next to your class schedule. Nothing is added to or changed in your calendar.</li>
+        <li><strong>Google Calendar</strong> (calendar.calendarlist.readonly, calendar.events.readonly): optionally, to show your meetings next to your class schedule. Nothing is added to or changed in your calendar.</li>
       </ul>
 
       <h2>Where is data stored?</h2>
       <p>Study records, schedule, documents and application information are stored in the app's data folder on your computer. If sync is on, a copy is written to the hidden Ertlanner app folder in your own Google Drive. Google sign-in credentials are encrypted with the operating system's secure storage (Windows user-account encryption, macOS Keychain) and stored only on your computer.</p>
 
-      <h2>Sharing</h2>
-      <p>Data is not shared with third parties, not sold, and not used for advertising or analytics. The app communicates directly with Google's APIs only.</p>
+      <h2>Team (Optional)</h2>
+      <p>The Team feature works only if you turn it on. For teams, the following is stored in Google Firebase (Cloud Firestore in Europe; Firebase Authentication in the US): your Google account ID and email address, the display name you choose, your team membership and invitations, the class schedule you choose to share (the last 4 weeks, this week and next week: course name, day, time, duration, color; classes you hide from the team are excluded), and the messages and feedback you write.</p>
+      <p>Locations, Google Calendar events, projects, internship applications, documents and session notes are never shared. Only members of your team can see this information; invited people also see the team name and members' email addresses. As owner of the Firebase project, the developer can technically access it but uses it only to operate and troubleshoot the service. Google operates Firebase as a data processor under the Firebase Data Processing Terms.</p>
 
-      <h2>Revoking access and deleting data</h2>
-      <p>You can revoke Ertlanner's access at any time on your <a href="https://myaccount.google.com/permissions">Google Account permissions</a> page. You can delete Ertlanner's data in Drive via Google Drive > Settings > Manage apps > Ertlanner > Delete hidden app data. Data on your computer is removed by deleting the app's data folder.</p>
+      <h2>Team Data Retention and Deletion</h2>
+      <ul>
+        <li>A shared week is hidden from the team about 4 weeks after it ends and is deleted when your or the team owner's Ertlanner runs.</li>
+        <li>Messages are deleted after 180 days when the author's or the team owner's Ertlanner runs.</li>
+        <li>Invitations remain until the owner withdraws them or the invited person declines.</li>
+        <li>When you turn sharing off, those weeks are deleted immediately.</li>
+        <li>When you leave a team, your shared schedule and the feedback written about you are deleted, and optionally your messages.</li>
+        <li>If the team owner removes you, your shared schedule, your messages and the feedback written about you are deleted.</li>
+        <li>"Ekip Verilerimi Sil" (Delete My Team Data) on the Ekip page deletes your data in your current team and your team account. Messages you left in a team you had already left are not covered; to have them deleted, write to the contact address below.</li>
+      </ul>
+
+      <h2>Update Check</h2>
+      <p>To find out whether a new version exists, Ertlanner connects to the public ertlanner-releases page on github.com. No personal data is sent with this request; GitHub sees the connection's IP address.</p>
+
+      <h2>Sharing</h2>
+      <p>Ertlanner communicates only with Google services (Google Account, Drive, Calendar, Firebase) and with GitHub to check for updates. Data is not sold or used for advertising or analytics. In the Team feature, only the information you choose is shown to your team members.</p>
+
+      <h2>Revoking Access and Deleting Data</h2>
+      <p>You can revoke Ertlanner's access at any time on your <a href="https://myaccount.google.com/permissions">Google Account permissions</a> page. You can delete Ertlanner's data in Drive via Google Drive > Settings > Manage apps > Ertlanner > Delete hidden app data. For team data, use "Ekip Verilerimi Sil" on the Ekip page first; revoking Google access does not delete your team data in Firebase by itself. Data on your computer is removed by deleting the app's data folder.</p>
 
       <h2>Google API Services User Data Policy</h2>
-      <p>Ertlanner's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+      <p>Ertlanner's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google Calendar data is not shared through the Team feature.</p>
     </section>
 
     <p class="meta">İletişim / Contact: <a href="https://github.com/ErtugrulS32175/ertlanner-site/issues">GitHub</a></p>
