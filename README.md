@@ -13,11 +13,11 @@
 - `index.html`: the homepage, https://ertugruls32175.github.io/ertlanner-site/
 - `privacy/index.html`: the privacy policy, https://ertugruls32175.github.io/ertlanner-site/privacy/
 
-Both pages are plain HTML with inline CSS, in Turkish and English. There is no build step, GitHub Pages serves the `main` branch as it is.
+Both pages are plain HTML with inline CSS, in Turkish and English. There is no build step: GitHub Pages serves the `main` branch as it is.
 
 ## Download
 
-Ertlanner is a personal planner for students and young professionals, for Windows and macOS. Installers for the current version are on the [releases page](https://github.com/ErtugrulS32175/ertlanner-releases/releases/latest).
+Ertlanner is a personal planner for students and young professionals, on Windows and macOS. Installers for the current version are on the [releases page](https://github.com/ErtugrulS32175/ertlanner-releases/releases/latest).
 
 ## Feedback
 

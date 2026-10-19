@@ -13,11 +13,11 @@
 - `index.html`: ana sayfa, https://ertugruls32175.github.io/ertlanner-site/
 - `privacy/index.html`: gizlilik politikası, https://ertugruls32175.github.io/ertlanner-site/privacy/
 
-İki sayfa da Türkçe ve İngilizce, satır içi CSS’li düz HTML’dir. Derleme adımı yoktur, GitHub Pages `main` dalını olduğu gibi yayınlar.
+İki sayfa da Türkçe ve İngilizce, satır içi CSS’li düz HTML’dir. Derleme adımı yok: GitHub Pages `main` dalını olduğu gibi yayınlar.
 
 ## İndirme
 
-Ertlanner, öğrenciler ve genç profesyoneller için Windows ve macOS’ta çalışan kişisel bir planlayıcıdır. Güncel sürümün kurulum dosyaları [sürümler sayfasında](https://github.com/ErtugrulS32175/ertlanner-releases/releases/latest).
+Ertlanner, öğrenciler ve genç profesyoneller için Windows ve macOS’ta çalışan kişisel bir planlayıcıdır. Güncel sürümün kurulum dosyaları [sürümler sayfasından](https://github.com/ErtugrulS32175/ertlanner-releases/releases/latest) indirilebilir.
 
 ## Geri Bildirim
 
