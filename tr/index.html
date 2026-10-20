@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ertlanner</title>
+  <meta name="description" content="Ertlanner: haftalık ders programı, odak zamanlayıcısı, kart koleksiyonu ve çalışma günlüğü olan Windows ve macOS planlayıcısı." />
+  <link rel="icon" href="../assets/icon.png" />
+  <style>
+    :root { color-scheme: light dark; --bg: #f6f6f3; --card: #fcfcfb; --text: #0b0b0b; --muted: #47463f; --accent: #217a4b; --border: rgba(11,11,11,.1); }
+    @media (prefers-color-scheme: dark) { :root { --bg: #0f0f0e; --card: #1a1a19; --text: #f4f4f2; --muted: #c3c2b7; --accent: #3fae72; --border: rgba(255,255,255,.1); } }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width: 800px; margin: 0 auto; padding: 40px 20px 64px; }
+    .top { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 28px; font-size: 14px; }
+    .brand { display: flex; align-items: center; gap: 14px; }
+    .brand img { width: 52px; height: 52px; border-radius: 12px; }
+    h1 { margin: 0; font-size: 30px; line-height: 1.2; }
+    .tagline { margin: 2px 0 0; color: var(--muted); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 20px 22px; margin: 16px 0; }
+    h2 { font-size: 18px; margin: 0 0 8px; }
+    p, li { color: var(--muted); }
+    ul { padding-left: 20px; margin: 8px 0 0; }
+    li { margin: 4px 0; }
+    figure { margin: 16px 0; }
+    figure img { width: 100%; height: auto; display: block; border-radius: 14px; border: 1px solid var(--border); }
+    figcaption { font-size: 14px; color: var(--muted); margin-top: 6px; }
+    a { color: var(--accent); }
+    footer { margin-top: 32px; font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 16px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="top">
+      <div class="brand">
+        <img src="../assets/icon.png" alt="" />
+        <div>
+          <h1>Ertlanner</h1>
+          <p class="tagline">Windows ve macOS için çalışma planlayıcısı</p>
+        </div>
+      </div>
+      <a href="../" lang="en">English</a>
+    </div>
+
+    <div class="card">
+      <h2>Ertlanner nedir?</h2>
+      <p>Ertlanner, öğrenciler ve genç profesyoneller için Windows ve macOS’ta çalışan bir masaüstü planlayıcıdır. Haftalık ders programını, odak zamanlayıcısını ve çalışma geçmişini bir arada tutar. Üniversite düzeyinde CV ve transkript arşivi, staj başvuruları ve projeler de vardır.</p>
+      <ul>
+        <li>Haftalık ders programı, Google Takvim toplantılarıyla birlikte</li>
+        <li>Odak zamanlayıcısı ve kronometre, geçmiş ve istatistiklerle</li>
+        <li>Koleksiyon kartları: en az 10 dakika süren her tamamlanmış çalışma resimli bir kart kazandırır. Kartın kademesi (Ahşap, Bronz, Gümüş ya da Altın) süreden gelir; Gümüş ve Altın çalışmalar küçük bir şansla Elmas ya da Titanyum’a yükselir.</li>
+        <li>Çalışma Günlüğü: her ders için günde çözülen soru sayısı ve çözülemeyen soruların fotoğrafları</li>
+        <li>İsteğe bağlı Ekip ve Arkadaşlar: davet ettiğin kişilerle ders programını ve çalışma günlüğünü paylaşma</li>
+      </ul>
+    </div>
+
+    <figure>
+      <img src="../assets/collection.jpg" width="1360" height="900" alt="Ertlanner’ın farklı kademelerde resimli kartların bulunduğu Koleksiyonum sayfası" />
+      <figcaption>Koleksiyonum sayfası.</figcaption>
+    </figure>
+
+    <div class="card">
+      <h2>Verilerin</h2>
+      <p>Veriler kendi bilgisayarında tutulur. Google hesabınla giriş yaparsan Ertlanner cihazlarını kendi Google Drive’ındaki gizli uygulama klasörü üzerinden eşitler. Ekip ve Arkadaşlar’da paylaştıkların Google Firebase’de saklanır. Ayrıntılar <a href="../privacy/tr/">gizlilik politikasında</a>.</p>
+    </div>
+
+    <div class="card">
+      <h2>İndir</h2>
+      <p>Windows ve macOS kurulum dosyaları <a href="https://github.com/ErtugrulS32175/ertlanner-releases/releases/latest">sürüm sayfasında</a>. Kurulu uygulama imzalı sürümlerden kendini günceller.</p>
+    </div>
+
+    <footer><a href="../privacy/tr/">Gizlilik Politikası</a><span>İletişim: <a href="https://github.com/ErtugrulS32175/ertlanner-site/issues">GitHub</a></span></footer>
+  </main>
+</body>
+</html>
